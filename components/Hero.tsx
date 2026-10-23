@@ -34,6 +34,23 @@ export default function Hero() {
             <div>100+ A/B Tests Executed[cite: 8]</div>
           </div>
         </div>
+
+        {/* Profile Image with Overlay Card */}
+        <div className="relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-teal-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+          <div className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
+            <img
+              src="/profile.jpg"
+              alt="Sruja Gangolu"
+              className="w-full h-full object-cover transition-all duration-300 hover:brightness-110"
+            />
+            {/* Small Overlay mentioning scale and education */}
+            <div className="absolute bottom-4 left-4 right-4 bg-slate-950/80 backdrop-blur-md border border-slate-800 p-3 rounded-xl text-xs space-y-1">
+              <div className="text-blue-400 font-semibold">IIT Kharagpur & IIM Calcutta[cite: 8]</div>
+              <div className="text-slate-300">Scaling products across 4M+ user ecosystems</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
